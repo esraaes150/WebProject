@@ -1,0 +1,140 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.nav-icons i {
+  font-size: 18px;
+  cursor: pointer;
+}
+.hero-section {
+  height: 100vh;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-top: 200px;
+}
+
+/* النص */
+.hero-title {
+  color: white;
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+.products .product-img {
+  width: 350px;
+  height: auto;
+}
+
+.product-title {
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #000;
+  font-weight: 600;
+}
+
+.stars i {
+  color: #ffcc00;
+  font-size: 13px;
+}
+
+.price {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+.powerful-concept {
+  color: white;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.powerful-concept::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/back2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.concept-content {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.concept-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.purchase-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 25px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+.footer-link {
+  color: #bdc3c7;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #e74c3c;
+  padding-left: 5px;
+}
+
+.footer-icon {
+  color: #bdc3c7;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  color: #e74c3c;
+  transform: translateY(-3px);
+}
