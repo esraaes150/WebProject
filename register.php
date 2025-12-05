@@ -4,17 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
+
 <title>Register</title>
 <style>
   .bg-box {
             width: 100%;
             height: 100vh;
-            background-image: url("bg");
-             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
+          
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,7 +23,7 @@
     
     margin: 0;
     padding: 0;
-     background-image: url("image/bg.jpg"); /* خليه بدون مسافات */
+     background-image: url("images/bg.jpg"); /* خليه بدون مسافات */
         background-size: cover;
         background-position: center;
                 
@@ -98,7 +94,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
-    $conn = mysqli_connect("localhost","root","","store_info");
+    $conn = mysqli_connect("localhost","root","","furniture_store");
 
     if($conn) {
         $name     = mysqli_real_escape_string($conn, $_POST['name']);
@@ -113,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
         if(mysqli_query($conn, $query)) {
             // بعد التسجيل، نرسل المستخدم إلى صفحة insert.php
-            header("Location: insert.php");
+            header("Location:home.php");
             exit();
         }
 
